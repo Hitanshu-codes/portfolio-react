@@ -3,10 +3,11 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 import Home from './pages/homepage';
 import AboutMe from './pages/aboutme';
+import Skills from './pages/skills';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About me', href: '/about-me' },
-  { name: 'Skills', href: '#' },
+  { name: 'Skills', href: '/skills' },
   { name: 'Projects', href: '#' },
 ];
 
@@ -36,6 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </>
 
