@@ -4,11 +4,12 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/homepage';
 import AboutMe from './pages/aboutme';
 import Skills from './pages/skills';
+import Projects from './pages/projects';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About me', href: '/about-me' },
   { name: 'Skills', href: '/skills' },
-  { name: 'Projects', href: '#' },
+  { name: 'Projects', href: '/projects' },
 ];
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </>
 
