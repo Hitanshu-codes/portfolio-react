@@ -3,25 +3,28 @@ export default function Projects() {
         {
             title: "Geo Tagging of Privately Owned Cameras",
             description:
-                "Developed using HTML, CSS, JavaScript, OpenCV, Flask, and Python to enable location-based surveillance.",
+                "A security-focused project that leverages OpenCV for real-time weapon detection in surveillance footage while integrating geotagging of privately owned CCTV cameras. By analyzing video streams, the system identifies armed individuals and updates authorities with precise camera locations for real-time monitoring, enhancing security and situational awareness.",
             image: "/Racam.webp",
             techStack: ["HTML", "CSS", "JavaScript", "OpenCV", "Flask", "Python"],
-            link: "#",
+            link: "https://github.com/Hitanshu-codes/RJPOLICE_HACK_488_CYBER-KNIGHTS_6/tree/main/Testing%20Flask",
         },
         {
-            title: "TTS (Text-to-Speech) and STT (Speech-to-Text) Converter",
-            description: " Developed using Python and JavaScript to convert text to speech and speech to text.It is a web application that uses the OpenAI API to convert text to speech and speech to text.",
+            title: "AI Recruiter",
+            description: " AI Recruiter is a web-based application developed using Python and JavaScript that streamlines recruitment through AI-driven voice interactions. Utilizing the OpenAI API for speech-to-text (STT) and text-to-speech (TTS) conversion, it conducts short voice interviews, memorizes conversations, and intelligently processes candidate responses. ",
             image: "/tts stt.webp",
-            techStack: ["Python", "JavaScript"],
-            link: "#",
+            techStack: ["Python", "JavaScript", "Langchain", "OpenAI"],
+            link: "https://github.com/Hitanshu-codes/AI-Recruiter/",
         },
     ];
 
     const otherProjects = [
-        { title: "Tic Tac Toe", description: "Short description of project.", link: "#", techStack: ["React", "Tailwind"] },
-        { title: "Linkedin Clone", description: "Short description of project.", link: "#", techStack: ["Python", "Flask"] },
-        { title: "Amazon Clone", description: "Short description of project.", link: "#", techStack: ["JavaScript", "Node.js"] },
-        { title: "Delicious Restaurant", description: "Short description of project.", link: "#", techStack: ["React", "Tailwind"] },
+        { title: "Tic Tac Toe", description: "It is a basic tic-tac-toe game built using React and Tailwind.", link: "https://github.com/Hitanshu-codes/basic-tic-tic-toe", techStack: ["React", "Tailwind"] },
+        { title: "Linkedin Clone", description: "It is a basic linkedin clone built using HTML and CSS.", link: "#", techStack: ["HTML", "CSS"] },
+        {
+            title: "Amazon Clone", description: "Short description of project.", link: "#", techStack: ["JavaScript", "Node.js", "HTML", "CSS"],
+
+        },
+        { title: "Delicious Restaurant", description: "It is a very basic restaurant website built using HTML and CSS.", link: "#", techStack: ["HTML", "CSS"] },
 
     ];
 
