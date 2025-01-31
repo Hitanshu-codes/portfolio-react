@@ -1,16 +1,16 @@
 "use client";
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 //import { Dialog, DialogPanel } from '@headlessui/react';
 //import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import DecryptedText from '../components/decryptedtext.js';
 
-const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'About me', href: '/about-me' },
-    { name: 'Skills', href: '#' },
-    { name: 'Projects', href: '#' },
-];
+// const navigation = [
+//     { name: 'Home', href: '/' },
+//     { name: 'About me', href: '/about-me' },
+//     { name: 'Skills', href: '#' },
+//     { name: 'Projects', href: '#' },
+// ];
 
 export default function Home() {
     // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,7 +34,7 @@ export default function Home() {
                                 >
                                     Get started
                                 </Link>
-                                <a href="#" className="text-sm font-semibold leading-6 text-red-700">
+                                <a href="https://www.linkedin.com/in/hitanshu-tandon/" className="text-sm font-semibold leading-6 text-red-700">
                                     Learn more <span aria-hidden="true">→</span>
                                 </a>
                             </div>

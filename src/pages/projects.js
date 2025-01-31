@@ -27,7 +27,7 @@ export default function Projects() {
 
     return (
         <section className="p-8 bg-transparent">
-            {/* Main Projects */}
+
             <div className="space-y-12">
                 {mainProjects.map((project, index) => (
                     <div
@@ -35,7 +35,7 @@ export default function Projects() {
                         className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? "md:flex-row border-r-4 " : "md:flex-row-reverse border-l-4"
                             } gap-8 bg-stone-600 bg-opacity-40 p-6 rounded-xl shadow-md  border-red-600`}
                     >
-                        <img src={project.image} alt={project.title} className="w-auto h-72 md:w-1/2 rounded-lg shadow-md" />
+                        <img src={project.image} alt={project.title} className="w-auto h-80 md:w-1/2 rounded-lg shadow-md" />
                         <div className="md:w-1/2">
                             <h3 className="text-red-600 text-2xl font-bold">{project.title}</h3>
                             <p className=" text-stone-50 mt-2">{project.description}</p>
@@ -57,7 +57,7 @@ export default function Projects() {
                 ))}
             </div>
 
-            {/* Other Projects */}
+
             <h2 className="text-2xl font-bold mt-12 text-red-600">Other Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
                 {otherProjects.map((project, index) => (
