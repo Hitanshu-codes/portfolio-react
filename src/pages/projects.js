@@ -1,27 +1,85 @@
-
-
 export default function Projects() {
+    const mainProjects = [
+        {
+            title: "Geo Tagging of Privately Owned Cameras",
+            description:
+                "Developed using HTML, CSS, JavaScript, OpenCV, Flask, and Python to enable location-based surveillance.",
+            image: "/Racam.webp",
+            techStack: ["HTML", "CSS", "JavaScript", "OpenCV", "Flask", "Python"],
+            link: "#",
+        },
+        {
+            title: "TTS (Text-to-Speech) and STT (Speech-to-Text) Converter",
+            description: " Developed using Python and JavaScript to convert text to speech and speech to text.It is a web application that uses the OpenAI API to convert text to speech and speech to text.",
+            image: "/tts stt.webp",
+            techStack: ["Python", "JavaScript"],
+            link: "#",
+        },
+    ];
+
+    const otherProjects = [
+        { title: "Tic Tac Toe", description: "Short description of project.", link: "#", techStack: ["React", "Tailwind"] },
+        { title: "Linkedin Clone", description: "Short description of project.", link: "#", techStack: ["Python", "Flask"] },
+        { title: "Amazon Clone", description: "Short description of project.", link: "#", techStack: ["JavaScript", "Node.js"] },
+        { title: "Delicious Restaurant", description: "Short description of project.", link: "#", techStack: ["React", "Tailwind"] },
+
+    ];
+
     return (
-        <>
-            <div className="bg-stone-600 bg-opacity-40 p-6 shadow-md rounded-xl border-l-4 border-red-600">
-                <h3 className="text-xl font-bold text-red-600">Projects</h3>
-                <div className="mt-2 text-stone-50">
-                    <div className="flex flex-col gap-4">
-                        <div className="flex flex-col gap-2">
-                            <h4 className="text-lg font-semibold text-red-600">Project 1</h4>
-                            <p>Project 1 Description</p>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <h4 className="text-lg font-semibold text-red-600">Project 2</h4>
-                            <p>Project 2 Description</p>
-                        </div>
-                        <div className="flex flex-col gap-2">
-                            <h4 className="text-lg font-semibold text-red-600">Project 3</h4>
-                            <p>Project 3 Description</p>
+        <section className="p-8 bg-transparent">
+            {/* Main Projects */}
+            <div className="space-y-12">
+                {mainProjects.map((project, index) => (
+                    <div
+                        key={index}
+                        className={`flex flex-col md:flex-row items-center ${index % 2 === 0 ? "md:flex-row border-r-4 " : "md:flex-row-reverse border-l-4"
+                            } gap-8 bg-stone-600 bg-opacity-40 p-6 rounded-xl shadow-md  border-red-600`}
+                    >
+                        <img src={project.image} alt={project.title} className="w-auto h-72 md:w-1/2 rounded-lg shadow-md" />
+                        <div className="md:w-1/2">
+                            <h3 className="text-red-600 text-2xl font-bold">{project.title}</h3>
+                            <p className=" text-stone-50 mt-2">{project.description}</p>
+                            <div className="mt-3 flex flex-wrap gap-2">
+                                {project.techStack.map((tech, i) => (
+                                    <span key={i} className="bg-stone-50 text-red-600 text-xs font-medium px-2.5 py-1 rounded">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <a
+                                href={project.link}
+                                className="mt-4 inline-block text-white bg-red-600 px-4 py-2 rounded-lg shadow hover:bg-stone-50 hover:text-red-600"
+                            >
+                                View Project
+                            </a>
                         </div>
                     </div>
-                </div>
+                ))}
             </div>
-        </>
+
+            {/* Other Projects */}
+            <h2 className="text-2xl font-bold mt-12 text-red-600">Other Projects</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                {otherProjects.map((project, index) => (
+                    <div key={index} className="bg-stone-600 bg-opacity-40 p-6 shadow-md rounded-lg">
+                        <h3 className="text-red-600 text-xl font-semibold">{project.title}</h3>
+                        <p className="text-gray-500">{project.description}</p>
+                        <div className="mt-3 flex flex-wrap gap-2">
+                            {project.techStack.map((tech, i) => (
+                                <span key={i} className="bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-1 rounded">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <a
+                            href={project.link}
+                            className="mt-4 inline-block text-stone-50 bg-red-600 px-4 py-2 rounded-lg shadow hover:bg-stone-50 hover:text-red-600"
+                        >
+                            View Project
+                        </a>
+                    </div>
+                ))}
+            </div>
+        </section>
     );
 }
