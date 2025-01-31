@@ -66,10 +66,10 @@ export default function Projects() {
                 {otherProjects.map((project, index) => (
                     <div key={index} className="bg-stone-600 bg-opacity-40 p-6 shadow-md rounded-lg">
                         <h3 className="text-red-600 text-xl font-semibold">{project.title}</h3>
-                        <p className="text-gray-500">{project.description}</p>
+                        <p className="text-stone-50">{project.description}</p>
                         <div className="mt-3 flex flex-wrap gap-2">
                             {project.techStack.map((tech, i) => (
-                                <span key={i} className="bg-gray-200 text-gray-700 text-xs font-medium px-2.5 py-1 rounded">
+                                <span key={i} className="bg-stone-50 text-red-600 text-xs font-medium px-2.5 py-1 rounded">
                                     {tech}
                                 </span>
                             ))}
