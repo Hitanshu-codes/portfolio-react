@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, } from 'react-router-dom';
 
 import Home from './pages/homepage';
 import AboutMe from './pages/aboutme';
@@ -22,7 +22,10 @@ function App() {
         <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between pt-6 pb-1 lg:px-8">
           <div className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img alt="" src="/Deadpool logo without bg.png" className="h-8 w-auto" />
+            <Link to="/" >
+              <img alt="" src="/Deadpool logo without bg.png" className="h-8 w-auto" />
+            </Link>
+
           </div>
 
           <div className="hidden lg:flex lg:gap-x-12">
