@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Routes, Route, Link, } from 'react-router-dom';
 
 import Home from './pages/homepage';
@@ -81,6 +82,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <Analytics />
     </>
   );
 }
