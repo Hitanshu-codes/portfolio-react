@@ -17,7 +17,7 @@ export const profile = {
 
 export const stats = [
     { value: 450, suffix: '+', label: 'participants served by a SaaS I built as the sole engineer' },
-    { value: 92, suffix: '%', label: 'answer accuracy on a RAG chatbot over ~800 pages of manuals' },
+    { value: 96, suffix: '%', label: 'answer accuracy on a RAG chatbot over ~800 pages of manuals' },
     { value: 1789, suffix: '', label: 'LeetCode contest rating' },
     { value: 650, suffix: '+', label: 'LeetCode problems solved' },
 ];
@@ -52,7 +52,7 @@ export const experience = [
         note: 'Promoted from Software Engineer Intern (Aug 2025 – Jan 2026)',
         points: [
             'Built and launched an AI-powered behaviour-change SaaS end to end as the sole engineer, serving 450+ participants across 20+ corporate training batches with 2,500+ actions completed.',
-            'Built a RAG chatbot over 8 product manuals (~800 pages) using OpenAI and pgvector, cutting answer lookup time by 70–90% with 92% accuracy.',
+            'Built a RAG chatbot over 8 product manuals (~800 pages) using OpenAI and pgvector, cutting answer lookup time by 70–90% with 96% accuracy.',
             'Architected a Gemini-powered generation pipeline with background batch jobs, a concurrency limiter and exponential backoff, producing 1,600+ personalised actions at a 95% job success rate.',
             "Designed prompt strategies and agentic workflows for an enterprise client's AI agents, raising response quality by 40%, with OpenAI and ElevenLabs for voice and text.",
             'Engineered an idempotent scheduling engine on Vercel Cron and atomic PostgreSQL claim functions, sending 500+ reminders with zero duplicates.',
@@ -120,9 +120,9 @@ export const projects = [
     {
         title: 'Sales Knowledge-Base RAG Assistant',
         description:
-            "A RAG chatbot built for a client's sales team (via Nudgeable Consulting) that answers questions from 8 product user guides (~800 pages). Uses OpenAI and pgvector on Postgres for retrieval, cutting answer-lookup time by 70–90% versus manual search with 92% answer accuracy.",
+            "A RAG chatbot built for a client's sales team (via Nudgeable Consulting) that answers questions from 8 product user guides (~800 pages). Uses OpenAI and pgvector on Postgres for retrieval, cutting answer-lookup time by 70–90% versus manual search with 96% answer accuracy.",
         badge: '📚 Client Project',
-        metric: '92% answer accuracy',
+        metric: '96% answer accuracy',
         categories: ['AI & LLMs'],
         techStack: ['OpenAI', 'pgvector', 'PostgreSQL', 'RAG'],
         featured: true,
