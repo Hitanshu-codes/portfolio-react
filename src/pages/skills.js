@@ -1,62 +1,62 @@
-//import { div } from 'framer-motion/client';
 import InfiniteScroll from '../components/infinitescroll';
-import AllSkillCard from '../components/allskillcard.js'
+import AllSkillCard from '../components/allskillcard.js';
+import SpotlightCard from '../components/spotlightcard.js';
+import AnimatedContent from '../components/animatedcontent.js';
+import SectionHeading from '../components/sectionheading.js';
+import usePageTitle from '../components/usepagetitle.js';
+import { skillGroups } from '../data/portfolio.js';
 
 const items = [
-
-    { content: <AllSkillCard iconPath={'/icons/nodejs.png'} /> },
-    { content: <AllSkillCard iconPath={'/icons/javascript.png'} /> },
-    { content: <AllSkillCard iconPath={'/icons/react.png'} /> },
-    { content: <AllSkillCard iconPath={'/icons/bootstrap.png'} /> },
-    { content: <AllSkillCard iconPath={'/icons/python.png'} /> },
-
-    { content: <AllSkillCard iconPath={'/icons/mongodb.png'} /> },
-
-    { content: <AllSkillCard iconPath={'/icons/git.png'} /> },
-    { content: <AllSkillCard iconPath={'/icons/css.png'} /> },
-    { content: <AllSkillCard iconPath={'/icons/html.png'} /> },
-    { content: <AllSkillCard iconPath={'/icons/opencv.png'} /> },
-];
-
-const skillGroups = [
-    { title: "Languages", skills: ["Python", "JavaScript", "SQL", "Java"] },
-    { title: "AI / GenAI", skills: ["AI Agents", "LangChain", "LangGraph", "RAG", "Model Context Protocol (MCP)", "OpenAI API", "Google Gemini API", "LangSmith", "LoRA/QLoRA", "PEFT", "Hugging Face Transformers"] },
-    { title: "Frontend", skills: ["React", "Next.js", "Tailwind CSS"] },
-    { title: "Backend", skills: ["Node.js", "Express.js", "FastAPI", "Flask", "REST APIs"] },
-    { title: "Databases", skills: ["PostgreSQL", "pgvector", "Supabase", "MySQL", "Redis", "MongoDB"] },
-    { title: "Cloud & DevOps", skills: ["Docker", "Kubernetes", "AWS EC2", "GCP", "Linux", "Git", "N8N"] },
+    { content: <AllSkillCard iconPath={'/icons/nodejs.png'} name="Node.js" /> },
+    { content: <AllSkillCard iconPath={'/icons/javascript.png'} name="JavaScript" /> },
+    { content: <AllSkillCard iconPath={'/icons/react.png'} name="React" /> },
+    { content: <AllSkillCard iconPath={'/icons/bootstrap.png'} name="Bootstrap" /> },
+    { content: <AllSkillCard iconPath={'/icons/python.png'} name="Python" /> },
+    { content: <AllSkillCard iconPath={'/icons/mongodb.png'} name="MongoDB" /> },
+    { content: <AllSkillCard iconPath={'/icons/git.png'} name="Git" /> },
+    { content: <AllSkillCard iconPath={'/icons/css.png'} name="CSS" /> },
+    { content: <AllSkillCard iconPath={'/icons/html.png'} name="HTML" /> },
+    { content: <AllSkillCard iconPath={'/icons/opencv.png'} name="OpenCV" /> },
 ];
 
 export default function Skills() {
+    usePageTitle('Skills');
+
     return (
-        <>
-            <div style={{ height: '500px', positon: 'relative', marginTop: '100px' }}>
-                <InfiniteScroll
-                    items={items}
-                    isTilted={true}
-                    tiltDirection='left'
-                    autoplay={true}
-                    autoplaySpeed={0.5}
-                    autoplayDirection="down"
-                    pauseOnHover={true}
-                />
-            </div>
+        <section className="mx-auto max-w-7xl px-6 pb-24 pt-8 lg:px-8">
+            <SectionHeading eyebrow="Skills" title="Tools I build with" subtitle="Languages, frameworks and platforms I use to ship AI products." />
 
-            <div className="mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
-                {skillGroups.map((group) => (
-                    <div key={group.title} className="bg-stone-600 bg-opacity-40 p-6 shadow-md rounded-xl border-l-4 border-red-600">
-                        <h3 className="text-xl font-bold text-red-600">{group.title}</h3>
-                        <div className="mt-3 flex flex-wrap gap-2">
-                            {group.skills.map((skill) => (
-                                <span key={skill} className="bg-stone-50 text-red-600 text-xs font-medium px-2.5 py-1 rounded">
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </>
+            <div className="grid items-center gap-10 lg:grid-cols-5">
+                <div className="h-[420px] lg:col-span-2 lg:h-[560px]">
+                    <InfiniteScroll
+                        items={items}
+                        isTilted={true}
+                        tiltDirection="left"
+                        autoplay={true}
+                        autoplaySpeed={0.5}
+                        autoplayDirection="down"
+                        pauseOnHover={true}
+                        width="20rem"
+                    />
+                </div>
 
+                <div className="grid gap-6 sm:grid-cols-2 lg:col-span-3">
+                    {skillGroups.map((group, i) => (
+                        <AnimatedContent key={group.title} delay={i * 0.08}>
+                            <SpotlightCard className="h-full border-l-4 border-l-red-600">
+                                <h3 className="font-display text-xl font-bold text-red-600">{group.title}</h3>
+                                <div className="mt-3 flex flex-wrap gap-2">
+                                    {group.skills.map((skill) => (
+                                        <span key={skill} className="rounded bg-stone-50 px-2.5 py-1 text-xs font-medium text-red-600">
+                                            {skill}
+                                        </span>
+                                    ))}
+                                </div>
+                            </SpotlightCard>
+                        </AnimatedContent>
+                    ))}
+                </div>
+            </div>
+        </section>
     );
 }
