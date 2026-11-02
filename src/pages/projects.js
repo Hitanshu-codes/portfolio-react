@@ -10,7 +10,7 @@ export default function Projects() {
         {
             title: "Sales Knowledge-Base RAG Assistant",
             description:
-                "A RAG chatbot built for a client's sales team (via nudgeable.ai) that answers questions from 8 product user guides (~800 pages). Uses OpenAI and pgvector on Postgres for retrieval, cutting answer-lookup time by 70–90% versus manual search with 92% answer accuracy.",
+                "A RAG chatbot built for a client's sales team (via Nudgeable Consulting) that answers questions from 8 product user guides (~800 pages). Uses OpenAI and pgvector on Postgres for retrieval, cutting answer-lookup time by 70–90% versus manual search with 92% answer accuracy.",
             badge: "📚 Client Project",
             techStack: ["OpenAI", "pgvector", "PostgreSQL", "RAG"],
         },

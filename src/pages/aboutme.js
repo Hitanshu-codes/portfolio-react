@@ -14,14 +14,14 @@ export default function AboutMe() {
                         />
                         <h2 className="text-2xl font-bold mt-1 text-red-600">Hitanshu Tandon</h2>
                         <p className="text-white">Full Stack AI Engineer</p>
-                        <p className="text-stone-300 text-sm">Software Engineer @ nudgeable.ai</p>
+                        <p className="text-stone-300 text-sm">Software Engineer at Nudgeable Consulting</p>
                     </div>
 
                     <div className="md:col-span-2 space-y-6">
 
 
                         <Card title="Experience" icon="💼" >
-                            <p><strong>Software Engineer</strong> – nudgeable.ai, Mumbai</p>
+                            <p><strong>Software Engineer</strong> – Nudgeable Consulting, Mumbai</p>
                             <p className="text-stone-300 text-sm">Jan 2026 – Present · Promoted from Software Engineer Intern (Aug 2025 – Jan 2026)</p>
                             <ul className="list-disc pl-5 mt-2 space-y-1">
                                 <li>Built and launched an AI-powered behaviour-change SaaS end to end as the sole engineer, serving 450+ participants across 20+ corporate training batches.</li>
