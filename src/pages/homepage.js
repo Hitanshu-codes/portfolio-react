@@ -24,8 +24,9 @@ export default function Home() {
                             <h1 className="mt-24 text-4xl font-bold tracking-tight text-red-700 sm:mt-10 sm:text-6xl">
                                 <DecryptedText text="Hitanshu Tandon" />
                             </h1>
+                            <p className="mt-4 text-2xl font-semibold text-white">Full Stack AI Engineer</p>
                             <p className="mt-6 text-lg leading-8 text-white">
-                                Passionate about programming, with a keen interest in Hackathons and Competitive Coding. I thrive in dynamic environments and excel at quickly learning new technologies. My strong organizational skills make me adept at efficiently managing tasks and projects.
+                                Software Engineer at nudgeable.ai, building Generative AI applications, AI agents and production web platforms end to end. I work across the stack with React/Next.js, Node.js/FastAPI and PostgreSQL, and build with LangChain, LangGraph, RAG and Model Context Protocol (MCP). Hackathon winner and competitive coder at heart.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
                                 <Link

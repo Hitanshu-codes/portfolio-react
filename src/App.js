@@ -35,6 +35,9 @@ function App() {
                 {item.name}
               </Link>
             ))}
+            <a href="https://github.com/Hitanshu-codes" className="text-sm font-semibold leading-6 text-red-600 hover:text-white">
+              GitHub
+            </a>
             <a href="https://www.linkedin.com/in/hitanshu-tandon" className="text-sm font-semibold leading-6 text-red-hover:text-white">
               <img alt="" src="/png_gsihf.png" className="h-6 w-6" />
             </a>
@@ -68,6 +71,9 @@ function App() {
                   {item.name}
                 </Link>
               ))}
+              <a href="https://github.com/Hitanshu-codes" className="block text-base font-semibold text-red-600 hover:text-white">
+                GitHub
+              </a>
               <a href="https://www.linkedin.com/in/hitanshu-tandon" className="block text-base font-semibold text-red-600 hover:text-white">
                 <img alt="" src="/png_gsihf.png" className="h-6 w-6" />
               </a>
