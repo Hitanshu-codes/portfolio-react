@@ -26,7 +26,7 @@ export default function Home() {
                             </h1>
                             <p className="mt-4 text-2xl font-semibold text-white">Full Stack AI Engineer</p>
                             <p className="mt-6 text-lg leading-8 text-white">
-                                Software Engineer at nudgeable.ai, building Generative AI applications, AI agents and production web platforms end to end. I work across the stack with React/Next.js, Node.js/FastAPI and PostgreSQL, and build with LangChain, LangGraph, RAG and Model Context Protocol (MCP). Hackathon winner and competitive coder at heart.
+                                Software Engineer building Generative AI applications, AI agents and production web platforms end to end. I work across the stack with React/Next.js, Node.js/FastAPI and PostgreSQL, and build with LangChain, LangGraph, RAG and Model Context Protocol (MCP). Hackathon winner and competitive coder at heart.
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">
                                 <Link
